@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project path="C:/Users/Administrator/Desktop/testA/testA.iwrp2">
+    <general project_version="3.0" maximum_software_running_version="3.1.11_debug_x86_">
+        <sourcewrp>testA.wrp</sourcewrp>
+        <name>testA</name>
+        <savedir>C:/Users/Administrator/Desktop/testA/testA.report</savedir>
+        <wrp_workspace>C:/Users/Administrator/Desktop/ZRY_WS</wrp_workspace>
+        <inchron_project/>
+        <inchron_path/>
+        <description>
+            <comment/>
+            <creation>2022-11-24_11:47:07</creation>
+            <modification>2023-01-11_15:47:06</modification>
+        </description>
+        <author>whp</author>
+    </general>
+    <systemarchitecture>
+        <modules>
+            <sequence>0</sequence>
+            <module>
+                <icds/>
+                <icds_output/>
+                <submodule>
+                    <modules>
+                        <module>
+                            <submodule>
+                                <modules>
+                                    <module>
+                                        <datasource/>
+                                        <permission isImport="0" read="1" exec="1" write="1"/>
+                                        <type>5</type>
+                                        <uuid>{a5dffa7c-6589-4e1e-9822-5bc7380b9c23}</uuid>
+                                        <name>ICDInGroup_1</name>
+                                        <x>256</x>
+                                        <y>210</y>
+                                        <width>120</width>
+                                        <height>80</height>
+                                        <font>PingFang SC ExtraLight,12,-1,5,50,0,0,0,0,0</font>
+                                        <border-color>143,184,170</border-color>
+                                        <use-default-background-color>1</use-default-background-color>
+                                        <use-default-border-color>1</use-default-border-color>
+                                        <background-color>214,245,230</background-color>
+                                        <font-color>0,0,0</font-color>
+                                        <submodule>
+                                            <modules/>
+                                            <associations/>
+                                        </submodule>
+                                        <portIcds/>
+                                        <icds>
+                                            <msgid>RN_A</msgid>
+                                        </icds>
+                                    </module>
+                                    <module>
+                                        <permission isImport="0" read="1" exec="1" write="1"/>
+                                        <type>1</type>
+                                        <uuid>{ac728e15-7ec3-4deb-9986-608a9d41c38e}</uuid>
+                                        <name>FMU_1</name>
+                                        <enable>1</enable>
+                                        <x>477</x>
+                                        <y>92</y>
+                                        <width>120</width>
+                                        <height>80</height>
+                                        <font>PingFang SC ExtraLight,12,-1,5,50,0,0,0,0,0</font>
+                                        <use-default-border-color>1</use-default-border-color>
+                                        <border-color>208,212,116</border-color>
+                                        <use-default-background-color>1</use-default-background-color>
+                                        <background-color>254,255,223</background-color>
+                                        <font-color>0,0,0</font-color>
+                                        <labelsamename>no</labelsamename>
+                                        <submodule>
+                                            <modules/>
+                                            <associations/>
+                                        </submodule>
+                                        <modelidentifier>IntAdd1FMU</modelidentifier>
+                                        <modelreference>{0A83BC86-7EE3-4D61-B7AE-10F949312CA6}</modelreference>
+                                    </module>
+                                    <module>
+                                        <datasource/>
+                                        <permission isImport="0" read="1" exec="1" write="1"/>
+                                        <type>6</type>
+                                        <uuid>{8dc7b619-7635-46d5-b25a-9a70e5e07dea}</uuid>
+                                        <name>ICDOutGroup_1</name>
+                                        <x>681</x>
+                                        <y>210</y>
+                                        <width>120</width>
+                                        <height>80</height>
+                                        <font>PingFang SC ExtraLight,12,-1,5,50,0,0,0,0,0</font>
+                                        <use-default-border-color>1</use-default-border-color>
+                                        <border-color>225,179,155</border-color>
+                                        <use-default-background-color>1</use-default-background-color>
+                                        <background-color>246,226,215</background-color>
+                                        <font-color>0,0,0</font-color>
+                                        <submodule>
+                                            <modules/>
+                                            <associations/>
+                                        </submodule>
+                                        <portIcds/>
+                                        <icds_output>
+                                            <msgid>RN_A</msgid>
+                                        </icds_output>
+                                    </module>
+                                    <module>
+                                        <type>14</type>
+                                        <uuid>{405a9e50-069d-4d11-8eb7-21eceeed7424}</uuid>
+                                        <name>VVScript_1</name>
+                                        <permission isImport="0" read="1" exec="1" write="1"/>
+                                        <x>99</x>
+                                        <y>323</y>
+                                        <width>120</width>
+                                        <height>80</height>
+                                        <font>PingFang SC ExtraLight,12,-1,5,50,0,0,0,0,0</font>
+                                        <border-color>109,163,217</border-color>
+                                        <use-default-border-color>1</use-default-border-color>
+                                        <background-color>250,200,180</background-color>
+                                        <use-default-background-color>1</use-default-background-color>
+                                        <font-color>0,0,0</font-color>
+                                        <script_file/>
+                                        <submodule>
+                                            <modules/>
+                                            <associations/>
+                                        </submodule>
+                                        <enable>0</enable>
+                                    </module>
+                                    <module>
+                                        <icds/>
+                                        <datasource/>
+                                        <permission isImport="0" read="1" exec="1" write="1"/>
+                                        <type>7</type>
+                                        <uuid>{69956b5f-a6c6-4b55-9093-421c80099fd5}</uuid>
+                                        <name>ConstantValue_1</name>
+                                        <x>340</x>
+                                        <y>431</y>
+                                        <width>150</width>
+                                        <height>40</height>
+                                        <font>PingFang SC ExtraLight,12,-1,5,50,0,0,0,0,0</font>
+                                        <border-color>109,163,217</border-color>
+                                        <use-default-border-color>1</use-default-border-color>
+                                        <background-color>255,255,255</background-color>
+                                        <use-default-background-color>1</use-default-background-color>
+                                        <font-color>0,0,0</font-color>
+                                        <Constant varvalue="30" name="ConstantValue_1" vartype="uint64" siSync="0" uuid="{1d60933c-4938-4bbf-a702-838c28f31b0f}"/>
+                                        <submodule>
+                                            <modules/>
+                                            <associations/>
+                                        </submodule>
+                                    </module>
+                                </modules>
+                                <associations>
+                                    <association>
+                                        <connection>
+                                            <direction1>
+                                                <integer>
+                                                    <association src_vvindex="0" output="PARAM3" target="module2" src="RN_A" input="IntIn"/>
+                                                    <association src_vvindex="0" output="32PARAM9" target="module2" src="RN_A" input="IntIn"/>
+                                                </integer>
+                                                <real/>
+                                                <bool/>
+                                                <Constant/>
+                                            </direction1>
+                                            <direction2/>
+                                        </connection>
+                                        <LinearType>5</LinearType>
+                                        <LinearState>0</LinearState>
+                                        <module1 name="ICDInGroup_1">{a5dffa7c-6589-4e1e-9822-5bc7380b9c23}</module1>
+                                        <module2 name="FMU_1">{ac728e15-7ec3-4deb-9986-608a9d41c38e}</module2>
+                                        <uuid>{06e9abd7-5020-4663-a97b-17262a1d8d36}</uuid>
+                                        <Enable>1</Enable>
+                                        <direction>1</direction>
+                                    </association>
+                                    <association>
+                                        <connection>
+                                            <direction1/>
+                                            <direction2>
+                                                <integer>
+                                                    <association target_vvindex="0" output="Add1Out" target="RN_A" src="module2" input="PARAM4"/>
+                                                    <association target_vvindex="0" output="Add1Out" target="RN_A" src="module2" input="32PARAM10"/>
+                                                </integer>
+                                                <real/>
+                                                <bool/>
+                                                <Constant/>
+                                            </direction2>
+                                        </connection>
+                                        <LinearType>5</LinearType>
+                                        <LinearState>2</LinearState>
+                                        <module1 name="FMU_1">{ac728e15-7ec3-4deb-9986-608a9d41c38e}</module1>
+                                        <module2 name="ICDOutGroup_1">{8dc7b619-7635-46d5-b25a-9a70e5e07dea}</module2>
+                                        <uuid>{b156a934-0d62-41d5-a997-be95f8e1a2de}</uuid>
+                                        <Enable>1</Enable>
+                                        <direction>1</direction>
+                                    </association>
+                                    <association>
+                                        <connection/>
+                                        <LinearType>5</LinearType>
+                                        <LinearState>1</LinearState>
+                                        <module1 name="VVScript_1">{405a9e50-069d-4d11-8eb7-21eceeed7424}</module1>
+                                        <module2 name="ICDInGroup_1">{a5dffa7c-6589-4e1e-9822-5bc7380b9c23}</module2>
+                                        <uuid>{759e2eaf-2603-49cc-963f-e2d95c1bd2be}</uuid>
+                                        <Enable>1</Enable>
+                                        <direction>1</direction>
+                                    </association>
+                                    <association>
+                                        <connection>
+                                            <direction1>
+                                                <integer/>
+                                                <real/>
+                                                <bool/>
+                                                <Constant>
+                                                    <association srcType="uint64" target_vvindex="0" targetType="uint32" output="module1" target="RN_A" targetName="RN_A" src="ConstantValue_1" srcValue="30" input="32PARAM9"/>
+                                                    <association srcType="uint64" target_vvindex="0" targetType="uint16" output="module1" target="RN_A" targetName="RN_A" src="ConstantValue_1" srcValue="30" input="PARAM3"/>
+                                                </Constant>
+                                            </direction1>
+                                            <direction2/>
+                                        </connection>
+                                        <LinearType>5</LinearType>
+                                        <LinearState>2</LinearState>
+                                        <module1 name="ConstantValue_1">{69956b5f-a6c6-4b55-9093-421c80099fd5}</module1>
+                                        <module2 name="ICDInGroup_1">{a5dffa7c-6589-4e1e-9822-5bc7380b9c23}</module2>
+                                        <uuid>{6b40b02e-5a8b-4b10-9112-4f6b842c3046}</uuid>
+                                        <Enable>1</Enable>
+                                        <direction>1</direction>
+                                    </association>
+                                </associations>
+                            </submodule>
+                            <type>2</type>
+                            <uuid>{f21a4302-fa81-43e3-beb2-b42b48ab77a9}</uuid>
+                            <name>Block_1</name>
+                            <enable>1</enable>
+                            <permission isImport="0" read="1" exec="1" write="1"/>
+                            <x>173</x>
+                            <y>117</y>
+                            <width>120</width>
+                            <height>80</height>
+                            <font>PingFang SC ExtraLight,12,-1,5,50,0,0,0,0,0</font>
+                            <border-color>225,179,155</border-color>
+                            <use-default-border-color>0</use-default-border-color>
+                            <background-color>255,232,220</background-color>
+                            <use-default-background-color>0</use-default-background-color>
+                            <font-color>0,0,0</font-color>
+                            <icds>
+                                <msgid>RN_A</msgid>
+                            </icds>
+                            <icds_output>
+                                <msgid>RN_A</msgid>
+                            </icds_output>
+                        </module>
+                    </modules>
+                    <associations/>
+                </submodule>
+                <permission isImport="0" read="1" exec="1" write="1"/>
+                <type>0</type>
+                <uuid>{35ae9f37-67f3-4081-9871-fa626b11ee60}</uuid>
+                <name>Package_1</name>
+                <x>91</x>
+                <y>33</y>
+                <width>120</width>
+                <height>80</height>
+                <font>PingFang SC ExtraLight,12,-1,5,50,0,0,0,0,0</font>
+                <border-color>109,163,217</border-color>
+                <use-default-border-color>1</use-default-border-color>
+                <use-default-background-color>1</use-default-background-color>
+                <background-color>219,230,255</background-color>
+                <font-color>0,0,0</font-color>
+            </module>
+        </modules>
+        <associations/>
+        <modelreferences>
+            <modelreference>
+                <uuid>{0A83BC86-7EE3-4D61-B7AE-10F949312CA6}</uuid>
+                <modelname>IntAdd1FMU.fmu</modelname>
+                <type>1</type>
+                <fmiversion>2</fmiversion>
+                <fmitype>0</fmitype>
+                <stepsize>0.01</stepsize>
+                <starttime>0</starttime>
+                <stoptime>1</stoptime>
+            </modelreference>
+        </modelreferences>
+    </systemarchitecture>
+    <schedulearchitecture>
+        <bus_conds/>
+        <processors>
+            <processor name="CPU1" uuid="{3c560589-fdfb-4300-a2fa-079efd551d94}"/>
+        </processors>
+        <schedules>
+            <schedule isAvailable="1" preview="1" allowRun="1" name="Test1" uuid="{e6c96789-4b91-4e16-85a0-4e9a7aba5b96}">
+                <type>调度</type>
+                <index>0</index>
+                <distributes/>
+                <subscribes/>
+                <start_condition>
+                    <description></description>
+                    <expression></expression>
+                    <usable>0</usable>
+                    <name></name>
+                    <tag></tag>
+                    <referUuid></referUuid>
+                    <rawRefer>1</rawRefer>
+                </start_condition>
+                <start_offset>0ms</start_offset>
+                <endTime>20ms</endTime>
+                <iterations>-1</iterations>
+                <period>20ms</period>
+                <jitter_max>0ms</jitter_max>
+                <jitter_min>0ms</jitter_min>
+                <jitter_stddev>1.0</jitter_stddev>
+                <jitterWithNormalDistribution use_normdist="0"/>
+                <description></description>
+                <processor name="CPU1" uuid="{3c560589-fdfb-4300-a2fa-079efd551d94}"/>
+                <taskList>
+                    <task name="Block_1(/Package_1)" valid="1" uuid="{bca6d6a1-f624-4cf5-ab30-4e11c7690090}">
+                        <index>3452816845</index>
+                        <distributes/>
+                        <subscribes/>
+                        <block uuid="{f21a4302-fa81-43e3-beb2-b42b48ab77a9}"/>
+                        <start_condition inherit="0">
+                            <description></description>
+                            <expression></expression>
+                            <usable>0</usable>
+                            <name></name>
+                            <tag></tag>
+                            <referUuid></referUuid>
+                            <rawRefer>1</rawRefer>
+                        </start_condition>
+                        <start_offset addOn="0">0ms</start_offset>
+                        <period inherit="1">20ms</period>
+                        <iterations inherit="1">-1</iterations>
+                        <execution_time>1ms</execution_time>
+                        <jitter_max inherit="1">0ms</jitter_max>
+                        <jitter_min>0ms</jitter_min>
+                        <jitter_stddev>1.0</jitter_stddev>
+                        <jitterWithNormalDistribution use_normdist="0"/>
+                        <color g="118" b="255" r="72"/>
+                        <priority>5</priority>
+                        <processors>
+                            <processor name="CPU1" uuid="{3c560589-fdfb-4300-a2fa-079efd551d94}"/>
+                        </processors>
+                        <description></description>
+                    </task>
+                </taskList>
+            </schedule>
+        </schedules>
+        <eventConfig>
+            <event topic="event/topic/{1c5ddba8-f16e-4b89-bcfc-f9073407bd73}" consumption="0" name="事件1" priority="0"/>
+            <event topic="event/topic/{04de80fc-92b2-400b-befc-a37693270adc}" consumption="0" name="事件2" priority="0"/>
+            <event topic="event/topic/{5c065fa4-5fdb-48b9-96a8-66fdcd11a01f}" consumption="0" name="事件3" priority="0"/>
+            <event topic="event/topic/{0af52da8-3ea2-4562-82b4-7571017b1983}" consumption="0" name="事件4" priority="0"/>
+            <event topic="event/topic/{65ed03dc-0957-4720-a2fb-15409ebc8a05}" consumption="0" name="事件5" priority="0"/>
+        </eventConfig>
+    </schedulearchitecture>
+    <MsgidNamedIndexs/>
+    <PublishArchitecture/>
+    <Resources name="Resources" uuid="{22edcce6-b899-4ad9-a394-1c4026ca2881}" type="1">
+        <Conditions name="Conditions" uuid="{4db8970d-6592-4944-a40e-fa14f88346c7}" type="8"/>
+        <Constants name="Constants" uuid="{d9de4b21-27b0-43ef-8048-bdc7f4919cbf}" type="2"/>
+    </Resources>
+    <WRP2Plugin/>
+    <busConfig/>
+</project>

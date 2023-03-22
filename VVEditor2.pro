@@ -23,9 +23,6 @@ CONFIG += resources_big
 DEFINES += USE_FIXED_FILE
 DEFINES += USE_SQLITE
 
-include(../mainprogram/WRP_GROUP.pri)
-include(Condition/condition.pri)
-
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
@@ -96,29 +93,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    #src.qrc \
-    #font.qrc \
-    #src.qrc
+    src.qrc \
     font.qrc
-
-
-LIBS += -lICDController
-#LIBS += -lconfiguration
-#LIBS += -lDataVisualizationAnalysisLib
-LIBS += -lTimeLib
-
-#win32:CONFIG(debug,debug|release){
-#LIBS += -lPublicLibraryd
-#LIBS += -lQt5Xlsxd
-#}else{
-#LIBS += -lPublicLibrary
-#LIBS += -lQt5Xlsx
-#}
-
-#whp add, only for convenient test, none copy
-#DESTDIR = ../Dependent/bin_debug
-#whp add end
-QMAKE_POST_LINK += xcopy /y/F \"$$SOURCE_CP_DIR/./*.exe\" \"$$DEST_CP_DIR\\\" $$escape_expand(\\n\\t)
 
 RC_FILE = logo.rc
 

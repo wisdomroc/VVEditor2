@@ -11,7 +11,6 @@
 #include <QList>
 #include "vv_typedef.h"
 
-#include "ICDController.h"
 
 class ICDData
 {
@@ -31,7 +30,6 @@ public:
     QHash<QString, QString> getMsgIDsHash() const;
 
 private:
-    ICDController  _icdController;
     QList<ICDInfo> _icds_info;
 
     QStringList    _msgNameList;

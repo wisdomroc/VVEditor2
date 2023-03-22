@@ -1,7 +1,7 @@
 ﻿#include "add_command_dlg.h"
 #include "ui_add_command_dlg.h"
 #include "select_signal_dlg.h"
-#include "Condition/ConditionWidget.h"
+
 #include "WRP_Project/SingletonProject.h"
 #include "icd_data.h"
 #include "beat_arrow.h"
@@ -652,21 +652,7 @@ void AddCommandDlg::on_comboBox_commandType_currentIndexChanged(int index)
 
 void AddCommandDlg::on_pushButton_conditionConfig_clicked()
 {
-    ConditionWidget *conditionWidget = new ConditionWidget(this);
-    QString conExp = ui->lineEdit_conditionExpression->text();
-    conditionWidget->setConditionExpression(conExp);
-    connect(conditionWidget,&ConditionWidget::signal_condition_confirm,this,[=](QString conditionExpression)
-    {
-        ui->lineEdit_conditionExpression->setText(conditionExpression);
-        conditionWidget->setConditionExpression(conditionExpression);
-    });
-    conditionWidget->setIcdsInfo(_infoList);
-    conditionWidget->setWindowTitle(QStringLiteral("条件配置"));
-    conditionWidget->setWindowFlag(Qt::Dialog);
-    conditionWidget->setWindowFlags(conditionWidget->windowFlags()&(~Qt::WindowContextHelpButtonHint));
-    conditionWidget->setWindowModality(Qt::WindowModal);
-    conditionWidget->setAttribute(Qt::WA_DeleteOnClose);
-    conditionWidget->show();
+
 }
 
 void AddCommandDlg::initData()

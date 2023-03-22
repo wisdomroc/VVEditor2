@@ -10,25 +10,12 @@
 #include "WRP_Project/SingletonProject.h"
 #include <QResource>
 #include <QMessageBox>
-int initResource(QString file){
-    if(!QResource::registerResource(file)){
-        QMessageBox::warning(nullptr,QString::fromLocal8Bit("警告"),QString::fromLocal8Bit("资源加载失败：%1").arg(file));
-        return -1;
-    }
-    return 0;
-}
-int initResources(){
-    int initCheck=0;
-    initCheck+=initResource("resources\\VVEditor2\\src.rcc");
-    return initCheck;
-}
+
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    if(initResources()<0){
-        return 0;
-    }
+
     //!限制不能重复启动
     static QSharedMemory *shareMem = new QSharedMemory("VVEditor");
     if (!shareMem->create(1))

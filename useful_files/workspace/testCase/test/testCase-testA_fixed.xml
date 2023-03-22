@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <scripFile>
+        <general>
+            <stepTime>20ms</stepTime>
+            <circleExecute>-1</circleExecute>
+            <basedType>1</basedType>
+        </general>
+    </scripFile>
+    <testCase type="Object">
+        <InitalData type="Array"/>
+        <caseData type="Array">
+            <row type="Object">
+                <currentStep>0</currentStep>
+                <description></description>
+                <beatType>0</beatType>
+                <stepCmd type="Array">
+                    <row type="Object">
+                        <cmdType>SET</cmdType>
+                        <expression></expression>
+                        <targetList/>
+                        <offset>8</offset>
+                        <wordOffset>0</wordOffset>
+                        <dataLength>32</dataLength>
+                        <dataType>float</dataType>
+                        <dataValue>5</dataValue>
+                        <dataTypeR></dataTypeR>
+                        <groupID>0x002</groupID>
+                        <groupname>CA_To_DA1</groupname>
+                        <signalID>float001</signalID>
+                        <signalName>float001</signalName>
+                        <dataIndex>0</dataIndex>
+                        <dataIndexR>0</dataIndexR>
+                        <PhysicalAddress></PhysicalAddress>
+                        <svpcBegin>0</svpcBegin>
+                        <svpcEnd>0</svpcEnd>
+                        <comparisonOperator>>=</comparisonOperator>
+                        <continuanceBeats>1</continuanceBeats>
+                    </row>
+                    <row type="Object">
+                        <cmdType>COMBINATION</cmdType>
+                        <expression></expression>
+                        <targetList/>
+                        <offset>0</offset>
+                        <wordOffset>0</wordOffset>
+                        <dataLength>32</dataLength>
+                        <dataType>int32</dataType>
+                        <dataValue>SineWave;100.00;10.00;99999;1</dataValue>
+                        <dataTypeR></dataTypeR>
+                        <groupID>0x002</groupID>
+                        <groupname>CA_To_DA1</groupname>
+                        <signalID>int001</signalID>
+                        <signalName>int001</signalName>
+                        <dataIndex>0</dataIndex>
+                        <dataIndexR>0</dataIndexR>
+                        <PhysicalAddress></PhysicalAddress>
+                        <svpcBegin>0</svpcBegin>
+                        <svpcEnd>0</svpcEnd>
+                        <comparisonOperator>==</comparisonOperator>
+                        <continuanceBeats>1</continuanceBeats>
+                    </row>
+                </stepCmd>
+            </row>
+            <row type="Object">
+                <currentStep>20</currentStep>
+                <description></description>
+                <beatType>0</beatType>
+                <stepCmd type="Array">
+                    <row type="Object">
+                        <cmdType>SET</cmdType>
+                        <expression></expression>
+                        <targetList/>
+                        <offset>0</offset>
+                        <wordOffset>0</wordOffset>
+                        <dataLength>32</dataLength>
+                        <dataType>int32</dataType>
+                        <dataValue>20</dataValue>
+                        <dataTypeR></dataTypeR>
+                        <groupID>0x002</groupID>
+                        <groupname>CA_To_DA1</groupname>
+                        <signalID>int001</signalID>
+                        <signalName>int001</signalName>
+                        <dataIndex>0</dataIndex>
+                        <dataIndexR>0</dataIndexR>
+                        <PhysicalAddress></PhysicalAddress>
+                        <svpcBegin>0</svpcBegin>
+                        <svpcEnd>0</svpcEnd>
+                        <comparisonOperator>==</comparisonOperator>
+                        <continuanceBeats>1</continuanceBeats>
+                    </row>
+                    <row type="Object">
+                        <cmdType>CHECK</cmdType>
+                        <expression></expression>
+                        <targetList/>
+                        <offset>0</offset>
+                        <wordOffset>0</wordOffset>
+                        <dataLength>32</dataLength>
+                        <dataType>int32</dataType>
+                        <dataValue>10</dataValue>
+                        <dataTypeR></dataTypeR>
+                        <groupID>0x002</groupID>
+                        <groupname>CA_To_DA1</groupname>
+                        <signalID>int001</signalID>
+                        <signalName>int001</signalName>
+                        <dataIndex>0</dataIndex>
+                        <dataIndexR>0</dataIndexR>
+                        <PhysicalAddress></PhysicalAddress>
+                        <svpcBegin>0</svpcBegin>
+                        <svpcEnd>0</svpcEnd>
+                        <comparisonOperator>>=</comparisonOperator>
+                        <continuanceBeats>1000</continuanceBeats>
+                    </row>
+                </stepCmd>
+            </row>
+            <row type="Object">
+                <currentStep>40</currentStep>
+                <description></description>
+                <beatType>0</beatType>
+                <stepCmd type="Array">
+                    <row type="Object">
+                        <cmdType>SET</cmdType>
+                        <expression></expression>
+                        <targetList/>
+                        <offset>0</offset>
+                        <wordOffset>0</wordOffset>
+                        <dataLength>32</dataLength>
+                        <dataType>int32</dataType>
+                        <dataValue>5</dataValue>
+                        <dataTypeR></dataTypeR>
+                        <groupID>0x002</groupID>
+                        <groupname>CA_To_DA1</groupname>
+                        <signalID>int001</signalID>
+                        <signalName>int001</signalName>
+                        <dataIndex>0</dataIndex>
+                        <dataIndexR>0</dataIndexR>
+                        <PhysicalAddress></PhysicalAddress>
+                        <svpcBegin>0</svpcBegin>
+                        <svpcEnd>0</svpcEnd>
+                        <comparisonOperator>==</comparisonOperator>
+                        <continuanceBeats>1</continuanceBeats>
+                    </row>
+                </stepCmd>
+            </row>
+            <row type="Object">
+                <currentStep>60</currentStep>
+                <description></description>
+                <beatType>0</beatType>
+                <stepCmd type="Array">
+                    <row type="Object">
+                        <cmdType>SET</cmdType>
+                        <expression></expression>
+                        <targetList/>
+                        <offset>0</offset>
+                        <wordOffset>0</wordOffset>
+                        <dataLength>32</dataLength>
+                        <dataType>int32</dataType>
+                        <dataValue>20</dataValue>
+                        <dataTypeR></dataTypeR>
+                        <groupID>0x002</groupID>
+                        <groupname>CA_To_DA1</groupname>
+                        <signalID>int001</signalID>
+                        <signalName>int001</signalName>
+                        <dataIndex>0</dataIndex>
+                        <dataIndexR>0</dataIndexR>
+                        <PhysicalAddress></PhysicalAddress>
+                        <svpcBegin>0</svpcBegin>
+                        <svpcEnd>0</svpcEnd>
+                        <comparisonOperator>==</comparisonOperator>
+                        <continuanceBeats>1</continuanceBeats>
+                    </row>
+                </stepCmd>
+            </row>
+        </caseData>
+    </testCase>
+</root>

@@ -1,7 +1,6 @@
 #include "vv_tree_item.h"
 #include "beat_arrow.h"
 #include <QDebug>
-#include <TimeLib.h>
 #include <QTime>
 
 VVTreeItem::VVTreeItem(VVTreeItem *parent)
@@ -96,7 +95,7 @@ QVariant VVTreeItem::data(int column) const
 
                 QString rightValStr = QString("%1%2").arg(p->_beat_number * cycle).arg(unit);
 
-                double val1 = TimeValue(rightValStr).getValueWithUnit(Millisecond);
+                double val1 = 0;
                 QTime tmpTime(0,0,0,0);
                 tmpTime = tmpTime.addMSecs((int)val1);
                 QString retStr = tmpTime.toString("hh:mm:ss.zzz");

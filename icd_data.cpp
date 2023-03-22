@@ -9,71 +9,12 @@ ICDData::ICDData(const QString &work_space)
 
 void ICDData::initICDData()
 {
-    QStringList msgNames = _icdController.getAllPackageNameList();
-    for (auto msgIter : msgNames)
-    {
-        ICDInfo tempIcd;
 
-        void *shmPackage = _icdController.findICDInstanceByID(msgIter);
-        if (shmPackage == nullptr)
-            continue;
-
-        auto pack = _icdController.findICDDefinationByID(msgIter);
-        if (pack == nullptr)
-            continue;
-
-        tempIcd.messageID_ =  pack->msgID;
-        tempIcd.messageName_ = msgIter;
-        tempIcd.dataPkgSummary_ = pack->PkgSummary;
-
-        QList<QSharedPointer<SignalDef> > icdSignals =  _icdController.getAllSignalsDef(shmPackage);
-
-        for (auto sigIter : icdSignals)
-        {
-            SingalInfo tempSigInfo;
-            tempSigInfo.signalName_ = sigIter->signalName;
-            tempSigInfo.signalID_ = sigIter->signalID;
-            tempSigInfo.lenght_ = sigIter->length;
-            tempSigInfo.offset_ = sigIter->offset;
-            tempSigInfo.wordOffset_ = sigIter->wordOffset;
-            tempSigInfo.formula_ = sigIter->formula;
-            tempSigInfo.strType_ = sigIter->strDataType;
-            tempSigInfo.strValue_ = sigIter->stringValue;
-
-            tempIcd.signals_ << tempSigInfo;
-        }
-
-        _icds_info << tempIcd;
-    }
-
-
-    qSort(_icds_info.begin(), _icds_info.end(), [](ICDInfo &icdInfo1, ICDInfo &icdInfo2){
-        if(icdInfo1.messageName_ != "" && icdInfo2.messageName_ != "")
-            return icdInfo1.messageName_ < icdInfo2.messageName_;
-        else
-            return icdInfo1.messageID_ < icdInfo2.messageID_;
-    });
-
-
-
-    for (int i = 0; i < _icds_info.size(); i++)
-    {
-        _msgNameList.append(_icds_info.at(i).messageName_);
-        _msgIDList.append(_icds_info.at(i).messageID_);
-    }
 }
 
 void ICDData::setWrokSpace(const QString& work_space)
 {
-    _work_space = work_space;
 
-    QString icdPath = _work_space + "/metaData";
-
-    if ( !_icdController.setControllerDir(icdPath) )
-        return;
-
-    _icdController.initIcdData();
-    initICDData();
 }
 
 QList<ICDInfo> ICDData::getIcdsInfo()
@@ -83,12 +24,12 @@ QList<ICDInfo> ICDData::getIcdsInfo()
 
 void* ICDData::findICDInstanceByID(const QString& name)
 {
-    return _icdController.findICDInstanceByID(name);
+    return nullptr;
 }
 
 short ICDData::getICDBuffers(void *icdHandle)
 {
-    return _icdController.getICDBuffers(icdHandle);
+     return 0;
 }
 
 QHash<QString, QString> ICDData::getSigNamesHash(const QString &msgID)
