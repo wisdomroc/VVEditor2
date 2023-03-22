@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="handleWidth">
+       <number>2</number>
+      </property>
+      <widget class="TreeView" name="treeView">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+      </widget>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="sizeIncrement">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="page_1">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="BeatArrow" name="beatArrow" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="GraphicsView" name="graphicsView">
+           <property name="focusPolicy">
+            <enum>Qt::StrongFocus</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_2">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="TreeViewR" name="treeView_beatAndCommand">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="action_newDir"/>
+    <addaction name="action_newFile"/>
+    <addaction name="action_newBeat"/>
+    <addaction name="action_newCommand"/>
+    <addaction name="action_save"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_modify"/>
+    <addaction name="action_delete"/>
+    <addaction name="action_modifyBeat"/>
+    <addaction name="action_modifyCommand"/>
+    <addaction name="action_copy"/>
+    <addaction name="action_paste"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>模式</string>
+    </property>
+    <addaction name="action_beatBased"/>
+    <addaction name="action_timeBased"/>
+    <addaction name="action_based"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>风格</string>
+    </property>
+    <addaction name="action_arrow"/>
+    <addaction name="action_table"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_newDir"/>
+   <addaction name="action_newFile"/>
+   <addaction name="action_newBeat"/>
+   <addaction name="action_newCommand"/>
+   <addaction name="separator"/>
+   <addaction name="action_copy"/>
+   <addaction name="action_paste"/>
+   <addaction name="action_based"/>
+   <addaction name="separator"/>
+   <addaction name="action_save"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_newDir">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/new_dir.png</normaloff>:/img/new_dir.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建文件夹</string>
+   </property>
+  </action>
+  <action name="action_newFile">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/new_file.png</normaloff>:/img/new_file.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建文件</string>
+   </property>
+  </action>
+  <action name="action_newBeat">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/new_beat.png</normaloff>:/img/new_beat.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建节拍</string>
+   </property>
+  </action>
+  <action name="action_newCommand">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/new_command.png</normaloff>:/img/new_command.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建命令</string>
+   </property>
+  </action>
+  <action name="action_delete">
+   <property name="icon">
+    <iconset resource="../ResourceTool/raw_resources/mainprogram/fmuverifier/resource.qrc">
+     <normaloff>:/img/delete.png</normaloff>:/img/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/save.png</normaloff>:/img/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="action_modify">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/modify.png</normaloff>:/img/modify.png</iconset>
+   </property>
+   <property name="text">
+    <string>编辑文件&amp;&amp;文件夹</string>
+   </property>
+  </action>
+  <action name="action_modifyBeat">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/modify.png</normaloff>:/img/modify.png</iconset>
+   </property>
+   <property name="text">
+    <string>编辑节拍</string>
+   </property>
+  </action>
+  <action name="action_modifyCommand">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/modify.png</normaloff>:/img/modify.png</iconset>
+   </property>
+   <property name="text">
+    <string>编辑命令</string>
+   </property>
+  </action>
+  <action name="action_beatBased">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>基于节拍</string>
+   </property>
+  </action>
+  <action name="action_timeBased">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>基于时间</string>
+   </property>
+  </action>
+  <action name="action_arrow">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>轴线展示</string>
+   </property>
+  </action>
+  <action name="action_table">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>表格展示</string>
+   </property>
+  </action>
+  <action name="action_copy">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/copy.png</normaloff>:/img/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_paste">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/paste.png</normaloff>:/img/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_based">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/switch.png</normaloff>:/img/switch.png</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>切换显示模式：节拍/时间/标准时间</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BeatArrow</class>
+   <extends>QWidget</extends>
+   <header>beat_arrow.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>graphics_view.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TreeView</class>
+   <extends>QTreeView</extends>
+   <header>treeview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TreeViewR</class>
+   <extends>QTreeView</extends>
+   <header>treeviewr.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../ResourceTool/raw_resources/mainprogram/fmuverifier/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

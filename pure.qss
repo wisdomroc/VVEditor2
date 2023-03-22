@@ -1,0 +1,74 @@
+QScrollBar:horizontal{background:transparent; height:10px;}
+QScrollBar::handle{background:lightgray; border:2px solid transparent; border-radius:5px;}
+QScrollBar::handle:hover{background:gray;}
+QScrollBar::sub-line{background:transparent;}
+QScrollBar::add-line{background:transparent;}
+QScrollBar:vertical{background:transparent; width: 10px;}
+QScrollBar::handle{background:lightgray; border:2px solid transparent; border-radius:5px;}
+QScrollBar::handle:hover{background:gray;}
+QScrollBar::sub-line{background:transparent;}
+QScrollBar::add-line{background:transparent;}
+
+QTreeView { outline: none;}
+QTreeView::item { background: white; height: 26px; }
+QTreeView::item:selected { background: #0078D7; }
+
+QTreeView QHeaderView::section:horizontal {
+background-color: #a6c3dd;
+color: white;
+padding-left: 4px;
+border: 0px solid #6c6c6c;
+border-right: 1px solid #6c6c6c;
+height: 26px;
+}
+QTreeView QHeaderView::section:vertical {
+padding-left: 4px;
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 1px solid lightGray;
+}
+QTreeView QTableCornerButton::section {
+background-color: #a6c3dd;
+color: white;
+border: 1px solid #6c6c6c;
+}
+QTreeView::branch:has-siblings:!adjoins-item {
+border-image: url(:img/vline.png) 0;
+}
+QTreeView::branch:has-siblings:adjoins-item {
+border-image: url(:img/branch-more.png) 0;
+}
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+border-image: url(:img/branch-end.png) 0;
+}
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+border-image: none;
+image: url(:img/branch-closed.png);
+}
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+border-image: none;
+image: url(:img/branch-open.png);
+}
+
+
+QTableView QHeaderView::section:horizontal {
+background-color: #a6c3dd;
+color: white;
+padding-left: 4px;
+border: 1px solid #6c6c6c;
+}
+QTableView QHeaderView::section:vertical {
+padding-left: 4px;
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 1px solid lightGray;
+}
+QTableView QTableCornerButton::section {
+background-color: #a6c3dd;
+color: white;
+border: 1px solid #6c6c6c;
+}

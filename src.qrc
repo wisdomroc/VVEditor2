@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/display.png</file>
+        <file>img/hidden.png</file>
+        <file>img/log_clear.png</file>
+        <file>img/log_succed.png</file>
+        <file>img/log_wornning.png</file>
+        <file>img/down.png</file>
+        <file>img/up.png</file>
+        <file>img/delete.png</file>
+        <file>img/undo.png</file>
+        <file>img/save.png</file>
+        <file>img/copy.png</file>
+        <file>img/paste.png</file>
+        <file>img/reload.png</file>
+        <file>img/beat.png</file>
+        <file>img/command.png</file>
+        <file>img/new_dir.png</file>
+        <file>img/new_file.png</file>
+        <file>img/modify.png</file>
+        <file>img/addAfter.png</file>
+        <file>img/addBefore.png</file>
+        <file>pure.qss</file>
+        <file>img/new_beat.png</file>
+        <file>img/new_command.png</file>
+        <file>img/dir.png</file>
+        <file>img/file.png</file>
+        <file>img/switch.png</file>
+        <file>img/branch-closed.png</file>
+        <file>img/branch-end.png</file>
+        <file>img/branch-more.png</file>
+        <file>img/branch-open.png</file>
+        <file>img/vline.png</file>
+        <file>img/title_icon.png</file>
+        <file>img/expanded_false.png</file>
+        <file>img/expanded_true.png</file>
+        <file>img/beat_modify.png</file>
+    </qresource>
+</RCC>

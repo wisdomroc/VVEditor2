@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>font/PingFang ExtraLight.ttf</file>
+        <file>font/VVEditor_zh.qm</file>
+    </qresource>
+</RCC>
