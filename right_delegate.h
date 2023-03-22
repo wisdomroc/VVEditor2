@@ -202,12 +202,10 @@ public:
                 {
                     model->setData(index.sibling(index.row(), 5), "", Qt::EditRole);
                     model->setData(index.sibling(index.row(), 6), "", Qt::EditRole);
-//nisz add 2022-6-15
                     model->setData(index.sibling(index.row(), 7), "", Qt::EditRole);
                     model->setData(index.sibling(index.row(), 8), "", Qt::EditRole);
                     model->setData(index.sibling(index.row(), 9), "", Qt::EditRole);
                     model->setData(index.sibling(index.row(), 10), "", Qt::EditRole);
-//add end
                 }
             }
             else if(index.column() == 4)
@@ -218,17 +216,15 @@ public:
                 {
                     model->setData(index.sibling(index.row(), 5), "", Qt::EditRole);
                     model->setData(index.sibling(index.row(), 6), "", Qt::EditRole);
-//nisz add 2022-6-15
                     model->setData(index.sibling(index.row(), 7), "", Qt::EditRole);
                     model->setData(index.sibling(index.row(), 8), "", Qt::EditRole);
                     model->setData(index.sibling(index.row(), 9), "", Qt::EditRole);
                     model->setData(index.sibling(index.row(), 10), "", Qt::EditRole);
-//add end
                 }
             }
             else if(index.column() == 5)
             {   // 有对应的sigID就直接设置上
-                QHash<QString, QString> hash = _icdData->getSigNamesHash(model->data(index.sibling(index.row(), 3)).toString());    //!TODO. 这里是根据的ICD_ID，但是会有问题，因为历史问题，这里暂使用ICD_NAME
+                QHash<QString, QString> hash = _icdData->getSigNamesHash(model->data(index.sibling(index.row(), 3)).toString());
                 QStringList infos = hash.value(currentValue).split(",");
                 model->setData(index.sibling(index.row(), 6), infos.at(0), Qt::EditRole);
                 model->setData(index.sibling(index.row(), 7), infos.at(1), Qt::EditRole);
@@ -236,7 +232,7 @@ public:
             }
             else if(index.column() == 6)
             {   // 有对应的sigName就直接设置上
-                QHash<QString, QString> hash = _icdData->getSigIDsHash(model->data(index.sibling(index.row(), 3)).toString());      //!TODO. 这里是根据的ICD_ID，但是会有问题，因为历史问题，这里暂使用ICD_NAME
+                QHash<QString, QString> hash = _icdData->getSigIDsHash(model->data(index.sibling(index.row(), 3)).toString());
                 QStringList infos = hash.value(currentValue).split(",");
                 model->setData(index.sibling(index.row(), 5), infos.at(0), Qt::EditRole);
                 model->setData(index.sibling(index.row(), 7), infos.at(1), Qt::EditRole);
@@ -272,10 +268,10 @@ private:
     }
 
 private:
-    QHash<QString, QString> _hash;      //存的是-->msgID:msgName或者msgName:msgID
-    QStringList             _texts;     //存的是msgIDs或者msgNames
-    QString                 _msgID;     //当前已经选中的msgID
-    QSharedPointer<ICDData> _icdData;   //ICD所有信息
+    QHash<QString, QString> _hash;      //
+    QStringList             _texts;     //
+    QString                 _msgID;     //当前已经选中的
+    QSharedPointer<ICDData> _icdData;   //
 };
 
 #endif // RIGHT_DELEGATE_H
